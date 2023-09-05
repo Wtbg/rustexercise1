@@ -12,10 +12,10 @@ pub fn compareString(x: &str, y: &str) -> bool {
         match x_vec[i].cmp(&y_vec[i]) {
             std::cmp::Ordering::Equal => {}
             std::cmp::Ordering::Less => {
-                return true;
+                return false;
             }
             std::cmp::Ordering::Greater => {
-                return false;
+                return true;
             }
         }
     }
